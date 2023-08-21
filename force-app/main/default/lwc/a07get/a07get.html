@@ -1,0 +1,33 @@
+<template>
+   <lightning-card title="GET methodu">
+
+<h1> sayi1 {sayi1} ve sayi2 {sayi2} toplami {toplam}</h1>
+<h1>GET sayi1 {sayi1} ve sayi2 {sayi2} toplami {toplamGet} </h1>
+
+<br> <p>********</p> <br>
+
+<h1> array 1. isim {secilenIsim}</h1>
+
+<h1> GET array 1. isim {secilenIsimGet}</h1>
+
+<br> <p>********</p> <br>
+
+<lightning-input 
+ type="text"
+ label="Lutfen sayi giriniz"
+ placeholder="sayi buraya"
+ min=0
+
+ onchange={handleIndex}></lightning-input>
+
+<h1> girilen inedex deki isim {secilenIsimFiltre}</h1>
+<h1>GET girilen inedex deki isim {secilenIsimFiltreGet}</h1>
+
+
+   </lightning-card> 
+
+
+
+
+
+</template>

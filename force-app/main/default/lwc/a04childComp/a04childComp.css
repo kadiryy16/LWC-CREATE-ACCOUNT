@@ -1,0 +1,12 @@
+h1{
+    color: green;
+}
+.guzel{
+
+color: var( --guzelRengi , rebeccapurple ) ;
+background-color: yellowgreen;
+font-family: 'Times New Roman', Times, serif;
+font-style: italic;
+font-size: xx-large;
+display: inline-block;
+}

@@ -1,0 +1,34 @@
+<template>
+  <div style="background-color: cadetblue;" class="container">
+    <label style="font-size: 40px; font-weight: bold; color: aqua; background-color: black;" for="fueltype">Yakıt türünü seçiniz:</label>
+    <lightning-combobox 
+      name="fueltype"
+      label="Arabalar - Benzin Turu 2"
+      style="color: rgb(255, 174, 0); background-color: rgb(236, 25, 172); font-size: 20px; font-style: italic;"
+      value={selectedFuelType}
+      options={fuelTypes}
+      onchange={handleFuelTypeChange}>
+    </lightning-combobox>
+  </div>
+  
+  
+      <template if:true={selectedFuelType}>
+        <div><!-- Kök öğeleri bu "div" içine alın -->
+          <label class="label label-second" for="carDetail">Araba Seçiniz:</label>
+          <lightning-combobox
+            name="carDetail" aria-setsize="font-size: 40px"
+            label="Arabalar - Araba Turleri" style="font-style: italic; font-size: 20px; color: blue; background-color: brown;"
+            value={selectedCarDetail} 
+            options={carDetailOptions} 
+            onchange={handleCarDetailChange}> 
+          </lightning-combobox>
+        </div>
+      </template>
+    </div>
+    
+  
+  </template>
+  
+  
+  
+  

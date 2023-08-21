@@ -1,0 +1,19 @@
+<template>
+    <!-- İmperatif Yöntem İle Hesap Listesi -->
+    <template for:each={imperativeListe} for:item="acc">
+        <p key={acc.Id}>
+            ID: {acc.Id} | NAME: {acc.Name}
+            <c-silme-wire-deneme account-id={acc.Id}></c-silme-wire-deneme>
+        </p>
+    </template>
+    <p>
+        ID: {accountId} 
+        <lightning-button 
+            variant="destructive" 
+            label="Sil" 
+            title="Account Sil" 
+            onclick={handleAccountSil}>
+        </lightning-button>
+    </p>
+
+</template>

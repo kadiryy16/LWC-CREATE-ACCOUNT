@@ -1,0 +1,39 @@
+<template>
+    
+<lightning-card title=" Component Composition">
+<h1>ARABA</h1>
+
+<h1> Araba Modeli = {arabaModeli}</h1>
+<lightning-input 
+ type="text" 
+ label="Araba Sec"
+ onchange={handleAraba}
+ ></lightning-input>
+<br>
+
+<lightning-input 
+ type="text" 
+ label="Motor Cinsi Sec"
+ onchange={handleMotorCinsi}
+ ></lightning-input>
+ <lightning-input 
+ type="number" 
+ name="input1" 
+ label="Motor Hacmi Seciniz"
+ onchange={handleMotorHacmi} ></lightning-input>
+
+<c-a05-motor-cinsi 
+ motor-cinsi={motorCinsiDede}
+ motor-hacmi-baba={motorHacmiDede}
+ motor-gucu-baba = 200 
+ yakit-turu-baba = "elektrik"
+
+  ></c-a05-motor-cinsi>
+
+
+
+
+</lightning-card>
+
+
+</template>

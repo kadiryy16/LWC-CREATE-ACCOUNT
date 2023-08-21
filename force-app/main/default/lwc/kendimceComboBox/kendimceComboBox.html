@@ -1,0 +1,56 @@
+<template>
+    <div class="container slds-grid slds-wrap"  >
+      <!-- Sol sütun - Araba Markası seçimi -->
+      <div class="slds-col slds-size_12-of-12">
+        <lightning-combobox 
+          name="progress"
+          label="Araba Markasi"
+          value={selectedCar} style="background-color: rgb(6, 136, 47); grid-column-end: auto; "
+          placeholder="araba seciniz"
+          options={carOptions} 
+          onchange={handleChange}>
+        </lightning-combobox>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+     
+
+      
+      <!-- Orta sütun - Model seçimi -->
+      <div class="slds-col slds-grid slds-size_1-of-2"> 
+      <div class="column slds-col slds-size_2-of-3"> 
+        <template if:true={modeller.length}>
+          <p> <mark>MODELLER</mark></p>
+          <lightning-combobox
+            name="models"
+            label="Model Seçin" style="background-color: aqua; color: brown; size: 0svi;" 
+            value={selectedModel}
+            placeholder="model seciniz"
+            options={modelOptions}
+            onchange={handleModelChange}>
+          </lightning-combobox>
+        </template>
+      </div>
+    </div>
+    <br>
+      <!-- Sağ sütun - Motor seçimi -->
+      <div class="column slds-col slds-size_1-of-3">
+        <template if:true={selectedModel}>
+            <p style="border: 0cqh; color: chartreuse;">MOTOR SEÇENEKLERİ </p>
+          <lightning-combobox
+            name="motorOptions"
+            label="Motor Seçin" style="background-color: chocolate; color: aqua;"
+            value={selectedMotor}
+            placeholder="motor seciniz"
+            options={motorOptions}
+            onchange={handleMotorChange}>
+
+          </lightning-combobox>
+        </template>
+      </div>
+    </div>
+  </template>
+  

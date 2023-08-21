@@ -1,0 +1,47 @@
+<template>
+  <div class="container slds-grid slds-gutters" style="color: hsl(232, 94%, 47%); background-color: rgb(252, 7, 134) ">
+    <div class="column slds-col">
+      <p>MARKALAR</p>
+      <lightning-combobox 
+        name="progress"
+        label="Araba Markasi" style="color: red;"
+        value={selectedCar}
+        placeholder="araba seciniz"
+        options={carOptions}
+        onchange={handleChange}>
+      </lightning-combobox>
+    </div>
+    <div class="column slds-col" style="background-color: chartreuse; border: 0dvb; color: darkorange;">
+      <template if:true={modeller.length}>
+        <p>MODELLER</p>
+        <lightning-combobox
+          name="models"
+          label="Model Seçin" aria-setsize="rgb" style="color: fuchsia;"
+          value={selectedModel}
+          placeholder="model seciniz"
+          options={modelOptions}
+          onchange={handleModelChange}>
+        </lightning-combobox>
+      </template>
+    </div>
+    <div class="slds-col" style="border-color: blue; background-color: cadetblue; color: blueviolet;">
+      <template if:true={selectedModel}>
+        <p>MOTOR SEÇENEKLERİ </p>
+        <lightning-combobox
+          name="motorOptions"
+          label="Motor Seçin" style="background-color: yellowgreen; box-shadow: 0lvh;"
+          value={selectedMotor}
+          placeholder="motor seciniz"
+          options={motorOptions}
+          onchange={handleMotorChange}>
+        </lightning-combobox>
+      </template>
+    </div>
+  </div>
+
+     @import 'comboBoxDeneme.css';
+  
+  
+</template>
+
+

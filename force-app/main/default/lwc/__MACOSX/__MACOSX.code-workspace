@@ -1,0 +1,151 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../__tests__"
+		},
+		{
+			"path": "../a01ilkComponent"
+		},
+		{
+			"path": "../a02DataBinding"
+		},
+		{
+			"path": "../a03ConditionalRendering"
+		},
+		{
+			"path": "../a03ListIteration"
+		},
+		{
+			"path": "../a04childComp"
+		},
+		{
+			"path": "../a04parentCompCSS"
+		},
+		{
+			"path": "../a05ArabaCOMPOSITION"
+		},
+		{
+			"path": "../a05ChildSlot"
+		},
+		{
+			"path": "../a05MotorCinsi"
+		},
+		{
+			"path": "../a05MotorOzellikleri"
+		},
+		{
+			"path": "../a05parentSLOT"
+		},
+		{
+			"path": "../a06AccountCreate"
+		},
+		{
+			"path": "../a06trackDecoratorObject"
+		},
+		{
+			"path": "../a06trackList"
+		},
+		{
+			"path": "../a06wireDecorator"
+		},
+		{
+			"path": "../a07get"
+		},
+		{
+			"path": "../a07getSetChildPrimitive"
+		},
+		{
+			"path": "../a07getSetParent"
+		},
+		{
+			"path": "../a07setChildObject"
+		},
+		{
+			"path": "../a09eventHtml"
+		},
+		{
+			"path": "../a09eventListenerParent"
+		},
+		{
+			"path": "../a010customChildIki"
+		},
+		{
+			"path": "../a010customeChildBir"
+		},
+		{
+			"path": "../a010customEventParent"
+		},
+		{
+			"path": "../a010customUc"
+		},
+		{
+			"path": "../a11SiblingPublisher"
+		},
+		{
+			"path": "../a11siblingReciver"
+		},
+		{
+			"path": "../a12lifeCycleChild"
+		},
+		{
+			"path": "../a12lifeCycleParent"
+		},
+		{
+			"path": "../a081eventExample"
+		},
+		{
+			"path": "../a082eventBubbling"
+		},
+		{
+			"path": "../accuntcontroller"
+		},
+		{
+			"path": "../calisma"
+		},
+		{
+			"path": "../comboBoxDeneme"
+		},
+		{
+			"path": "../createaCustomFormwithButton"
+		},
+		{
+			"path": "../createAndEditAndDelete"
+		},
+		{
+			"path": "../dilekHanim"
+		},
+		{
+			"path": "../kendimceComboBox"
+		},
+		{
+			"path": "../LWC ile account olustur"
+		},
+		{
+			"path": "../pubsub"
+		},
+		{
+			"path": "../sectionLwc"
+		},
+		{
+			"path": "../silmeWireDeneme"
+		},
+		{
+			"path": "../wrapperAccountContactDisplay"
+		},
+		{
+			"path": "../wrapperClassExampleLWC"
+		},
+		{
+			"path": "../xxxa13getUserDetails"
+		},
+		{
+			"path": "../xxxa14TargetConfigDesign"
+		},
+		{
+			"path": "../xxxquicActionUpdateLWC"
+		}
+	]
+}

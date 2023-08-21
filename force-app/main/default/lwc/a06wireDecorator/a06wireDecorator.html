@@ -1,0 +1,86 @@
+<template>
+    
+    <lightning-card title="@wire decorator">
+<!--basit liste getirmek   -->
+<template for:each={armut.data} for:item="acc">
+
+    <p key={acc.Id}> ID:: {acc.Id}          NAME :: {acc.Name}    </p>
+
+</template>
+   </lightning-card>
+
+<br> <p>*********************</p> <br>
+
+<lightning-card title="@wire ile Filtre">
+   <!--  filtre ile  liste getirmek 1. yontem --> 
+<lightning-input type="text"
+ label="Account getir"
+ onchange={handleAccount}></lightning-input>
+
+
+
+   <template for:each={filtreIleAccountListesi.data} for:item="acc">
+
+    <p key={acc.Id}> ID:: {acc.Id}          NAME :: {acc.Name}    </p>
+
+</template>
+
+
+</lightning-card>
+
+
+<br> <p>*********************</p> <br>
+
+<lightning-card title="@wire ile Filtre 2. yontem">
+   <!--  filtre ile  liste getirmek 2. yontem --> 
+<lightning-input type="text"
+ label="Account getir"
+ onchange={handleAccountIki}></lightning-input>
+
+
+
+   <template for:each={dataListesi} for:item="acc">
+
+    <p key={acc.Id}> ID:: {acc.Id}          NAME :: {acc.Name}    </p>
+
+  </template>
+
+
+</lightning-card>
+
+<br><p>***********</p> <br>
+
+
+<lightning-card title="Imperative yontem ">
+<!-- imperative yontem ile liste getirme  -->
+
+<lightning-input type="text"
+ label="Account getir"
+ onchange={handleAccountImperative}></lightning-input>
+
+
+
+
+<lightning-button 
+    variant="success" 
+    label="Account Getir" 
+    title="Successful action" 
+    onclick={handleAccountGetir} 
+    class="slds-m-left_x-small"></lightning-button>
+
+
+<template for:each={imperativeListe} for:item="acc">
+
+    <p key={acc.Id}> ID:: {acc.Id}          NAME :: {acc.Name}    </p>
+
+  </template>
+
+
+
+
+</lightning-card>
+
+
+
+    
+</template>

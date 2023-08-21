@@ -1,0 +1,46 @@
+<template>
+    <lightning-card title="Custom event Olusturma">
+<P> PARENT</P>
+<BR>
+
+
+    <c-a010custome-child-bir
+      onelma={handleElma} >
+
+    </c-a010custome-child-bir>
+<p> bu bilgi  >>>>> {yeniBilgi}</p>
+
+
+    </lightning-card>
+
+    <br> <p>********</p> <br>
+    <lightning-card title="Custom event Primitive Data">
+        <P> PARENT</P>
+        <BR>
+        
+        
+            <c-a010custom-child-iki
+              onarmut={handleArmut} >
+        
+            </c-a010custom-child-iki>
+        <p> bu bilgi  >>>>> {yeniBilgiPrimitive}</p>
+        
+        
+            </lightning-card>
+        
+            <br> <p>********</p> <br>
+
+<lightning-card title="CHILDDAN OBJCET GETIR">
+<p>PARENT COMP</p>
+<br>
+<c-a010custom-uc
+ onayva={handleAyva}
+>
+
+</c-a010custom-uc>
+
+<p> childdan gelen CUSTOMER NAME >>>{customer.name}</p>
+<p> childdan gelen CUSTOMER AGE >>>{customer.yas}</p>
+</lightning-card>
+
+</template>

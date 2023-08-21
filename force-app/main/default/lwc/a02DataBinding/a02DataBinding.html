@@ -1,0 +1,73 @@
+<template>
+    
+
+    <lightning-card  title="Data Binding ( tek yon)">
+        
+        <h1>benim adim {isim}</h1>
+      
+    </lightning-card>
+
+
+<lightning-card  title="Data Binding ( cift yon)">
+
+    <lightning-input 
+    type="text" 
+    label="Isminizi Giriniz"
+    onchange={handleIsim}   ></lightning-input>
+
+<h1> benim adim {ad}</h1>
+
+</lightning-card>
+
+
+<lightning-card title="Full isim olusturma">
+
+    <lightning-input 
+    type="text" 
+    label="Isminizi Giriniz"
+    onchange={handleFirstName}   ></lightning-input>
+
+    <lightning-input 
+    type="text" 
+    label="Soyisminizi Giriniz"
+    onchange={handleLastName}   ></lightning-input>
+ 
+    <br>
+
+<p> benim full adim {tumIsim}    </p>
+
+
+</lightning-card>
+<br>
+<p>**************************************</p>
+
+<lightning-card title="TOPLAMA">
+
+    <lightning-input 
+    type="number" 
+    name="input1" 
+    label="SAYI 1" 
+    value="0"
+    onchange={handleNum1}></lightning-input>
+
+    <lightning-input 
+    type="number" 
+    name="input2" 
+    label="SAYI 2" 
+    value="0"
+    onchange={kiraz}></lightning-input>
+
+<br>
+
+<p> sayi1= {sayi1}  ile sayi 2 ={sayi2} toplami === {toplam}</p>
+
+
+</lightning-card>
+
+
+
+
+
+
+
+</template>

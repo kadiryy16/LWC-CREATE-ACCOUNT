@@ -1,0 +1,40 @@
+<template>
+    
+
+    <lightning-card title="OBJECT iterration (Track Decorator)">
+  
+        <lightning-input 
+        type="text" 
+        label="Cicek Adi Giriniz"
+        onchange={handleName}   ></lightning-input>
+
+        <lightning-input 
+        type="text" 
+        label="Cicek Familyasi Giriniz"
+        onchange={handleFamilya}   ></lightning-input>
+
+        <lightning-button 
+          variant="brand" 
+          label="Cicek Olustur" 
+          title="Primary action" 
+          onclick={handleClick} 
+          class="slds-m-left_x-small"></lightning-button>
+
+        <br>
+   
+        <template for:each={cicekListesi} for:item="cicek">
+           <ol key={cicek.id}>
+              <li> CICEK ADI :: {cicek.id}  </li>
+               <li> CICEK ADI :: {cicek.name}  </li>
+               <li> Cicek Familya :: {cicek.familya}   </li>
+              
+           <br>
+   
+           </ol>
+   
+        </template>
+   
+   
+    </lightning-card>
+
+</template>

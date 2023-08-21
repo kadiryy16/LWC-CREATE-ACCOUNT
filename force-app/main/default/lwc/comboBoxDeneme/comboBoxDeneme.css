@@ -1,0 +1,20 @@
+
+
+/* "label" etiketine stil düzenlemesi */
+.label {
+    font-size: 30px; /* Yazı boyutunu istediğiniz gibi değiştirin */
+    font-weight: bold; /* Metni kalın hale getir */
+    color: brown; /* Yazı rengini değiştir */
+    /* Diğer özel stilleri burada ekleyebilirsiniz */
+}
+.placeholder{
+    font-size: 50px; /* Yazı boyutunu istediğiniz gibi değiştirin */
+    font-weight: bold ; /* Metni kalın hale getir */
+    color: rgb(8, 218, 85); /* Yazı rengini değiştir */
+    /* Diğer özel stilleri burada ekleyebilirsiniz */
+    .slds-form-element__label {
+        font-size: var(--label-font-size);
+        font-weight: var(--label-font-weight);
+        color: var(--label-color);
+}
+}

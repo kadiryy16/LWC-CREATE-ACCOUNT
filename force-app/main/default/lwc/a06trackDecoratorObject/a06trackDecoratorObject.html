@@ -1,0 +1,37 @@
+<template>
+    <lightning-card title=" track decorator">
+
+   
+    <lightning-input 
+    type="text" 
+    label="Isminizi Giriniz"
+    onchange={handleIsim}   ></lightning-input>
+
+    <lightning-input 
+    type="text" 
+    label="Soy isim  Giriniz"
+    onchange={handleSoyIsim}   ></lightning-input>
+
+    <lightning-input 
+    type="text" 
+    label="Yas  Giriniz"
+    onchange={handleAge}   ></lightning-input>
+
+
+    <h1> benim adim {ad}</h1>
+    <h1> benim soyadim {soyad}</h1>
+    
+<br> <span>************</span>
+
+<h1>benim Name  {fullIsim.name}</h1>
+<h1>benim Lastname/Yasim  {fullIsim.age}</h1>
+
+</lightning-card>
+  
+
+
+
+
+
+
+</template>

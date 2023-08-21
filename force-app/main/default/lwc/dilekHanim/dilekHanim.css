@@ -1,0 +1,23 @@
+/* style.css dosyası */
+.label-bold {
+    font-weight: bold;
+  }
+  
+  .label-italic {
+    font-style: italic;
+  }
+  
+  .container label[label="Arabalar - Benzin Turu 2"] {
+    font-size: 60px;
+  }
+  
+  /* Örnek olarak daha anlamlı class isimleri */
+  .custom-label {
+    font-weight: bold;
+  }
+  
+  .italic-text {
+    font-style: italic;
+  }
+  
+ 
